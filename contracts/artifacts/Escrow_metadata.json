@@ -1,0 +1,173 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_feedback",
+						"type": "string"
+					}
+				],
+				"name": "feedbackLog",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_secret",
+						"type": "string"
+					}
+				],
+				"name": "txInfo",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_isConfirmed",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "_vendor",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_messenger",
+						"type": "address"
+					}
+				],
+				"name": "confirmDelivery",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "contractOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_messenger",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_secretHash",
+						"type": "string"
+					}
+				],
+				"name": "depositToContract",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "vendor",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "messenger",
+						"type": "address"
+					}
+				],
+				"name": "getStagedMoney",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "__vendor",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_messenger",
+						"type": "address"
+					}
+				],
+				"name": "returnMoneyToVendor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/escrow.sol": "Escrow"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/escrow.sol": {
+			"keccak256": "0xa7f80362271137fdd76682d8e9f71974751c97602badfac9b366e7beee05c869",
+			"license": "Unlicense",
+			"urls": [
+				"bzz-raw://24990b15500cd67297c28b275a57d5b54586f84cdcf254b1e8bd2697b13ab975",
+				"dweb:/ipfs/QmbJeniTXWxjED3rREtWjMRQE6ChKPZ6dSwSMjYrFLzC9u"
+			]
+		}
+	},
+	"version": 1
+}
